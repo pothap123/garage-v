@@ -71,3 +71,17 @@ svg{
     margin:0;
     color: white;
 }
+
+.go-home{
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-align: left;
+}
+
+#go-home arrow{
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-align: left;
+}
