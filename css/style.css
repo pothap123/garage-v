@@ -41,3 +41,33 @@ li a{
     width: 100%;
     height: auto;
 }
+
+#contact-us-ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+svg{
+    color: #573b29;
+    width: 40px;
+    height: 40px;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('../images/header-background.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header h1{
+    font-size: 20vw;
+    margin:0;
+    color: white;
+}
