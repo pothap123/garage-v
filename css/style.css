@@ -1,0 +1,43 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body{
+    text-align: center;
+    background-color: #f6f1e8;
+}
+
+#services-archive li{
+    list-style: none;
+    display: inline-block;
+}
+
+li a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #f6f1e8;
+    /* color: green; */
+    margin-right: 25px;
+}
+
+.gallery{
+    display: inline-block;
+    border: 1px solid #573b29;
+    margin: 5px;
+    width: 200px;
+}
+
+.gallery .description {
+    padding: 10px;
+    text-align: center;
+}
+
+.gallery:hover{
+    border: 1px solid #e55e0a;
+}
+
+.gallery img{
+    width: 100%;
+    height: auto;
+}
