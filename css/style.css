@@ -1,11 +1,21 @@
 html{
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+    background-color: #f6f1e8;
 }
 
 body{
     text-align: center;
     background-color: #f6f1e8;
+}
+
+h2 {
+    /* font-size: 30px; */
+    font-family: Bahnschrift, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    /* color: #573b29; */
 }
 
 #services-archive li{
@@ -25,12 +35,32 @@ li a{
     display: inline-block;
     border: 1px solid #573b29;
     margin: 5px;
-    width: 200px;
+    width: 300px;
+}
+.who-we-are{
+    display: inline-block;
+    /* margin: 5px; */
+    width: 800px;
+    font-size: 18px;
+    font-family: Bahnschrift, sans-serif;
+    line-height: 30px;
+    letter-spacing: 1px;
 }
 
 .gallery .description {
     padding: 10px;
     text-align: center;
+    font-family: Bahnschrift, sans-serif;
+    line-height: 20px;
+    letter-spacing: 1px;
+}
+
+.description {
+    padding: 10px;
+    text-align: center;
+    font-family: Bahnschrift, sans-serif;
+    line-height: 20px;
+    letter-spacing: 1px;
 }
 
 .gallery:hover{
@@ -56,7 +86,6 @@ svg{
 .header{
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url('../images/header-background.jpg');
     background-position: center;
     background-size: cover;
     position: relative;
@@ -64,6 +93,8 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url("../images/garagev-bg.png");
+    background-repeat: repeat;
 }
 
 .header h1{
@@ -73,36 +104,48 @@ svg{
 }
 
 .go-home{
-    width: 40px;
-    height: 40px;
     float: left;
     text-align: left;
 }
 
 #go-home arrow{
-    width: 40px;
-    height: 40px;
     float: left;
     text-align: left;
 }
 
+#go-home-arrow-img{
+    height: 75px;
+}
+
+#page-title{
+    align-items: center;
+}
+
+/* the spacing for all of the boxes */
 .grid-boxes{
   display: grid;
-  grid-template-columns: repeat(2, 150px); /* 2 columns */
+  grid-template-columns: repeat(2, 300px); /* 2 columns */
   grid-template-rows: repeat(2, 150px);    /* 2 rows */
-  gap: 20px;                               /* space between boxes */
+  /* gap: 500px;                               space between boxes */
+  column-gap: 250px;                          /* horizontal space between boxes */
+  row-gap: 0px;                             /* vertical space between boxes */
   justify-content: center;                 /* center horizontally */
   align-content: center;                   /* center vertically */
-  list-style: none;                        /* remove bullets */
+  list-style: none;                        /* remove bullets*/
   padding: 0;
   margin: 0;
 }
 
+/* Within each box itself */
 .grid-boxes li {
-  background-color: #ddd;
+  /* background-color: #ddd; */
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  border: 2px solid #333;
+  font-size: 18px;
+  font-family: Bahnschrift, sans-serif;
+  line-height: 30px;
+  letter-spacing: 1px;
+  /* border: 2px solid #333; */
 }
