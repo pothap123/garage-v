@@ -7,6 +7,7 @@ html{
 body{
     text-align: center;
     background-color: #f6f1e8;
+    margin: 0;
 }
 
 h2 {
@@ -31,12 +32,6 @@ li a{
     margin-right: 25px;
 }
 
-.gallery{
-    display: inline-block;
-    border: 1px solid #573b29;
-    margin: 5px;
-    width: 300px;
-}
 .who-we-are{
     display: inline-block;
     /* margin: 5px; */
@@ -45,6 +40,13 @@ li a{
     font-family: Bahnschrift, sans-serif;
     line-height: 30px;
     letter-spacing: 1px;
+}
+
+.gallery{
+    display: inline-block;
+    border: 1px solid #573b29;
+    margin: 5px;
+    width: 300px;
 }
 
 .gallery .description {
@@ -101,6 +103,23 @@ svg{
     font-size: 20vw;
     margin:0;
     color: white;
+}
+
+.rest-of-page{
+    background-image: url("../images/garagev-bg.png");
+    background-repeat: repeat;
+    justify-content: center;
+    justify-content: center;
+    display:flex;
+    
+    
+}
+
+.foreground{
+    /* align-items: center; */
+    background-color: #f6f1e8;
+    width: 70%;
+    /* z-index: 2; */
 }
 
 .go-home{
