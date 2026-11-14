@@ -79,10 +79,18 @@ li a{
     display: inline-block;
 }
 
-svg{
-    color: #573b29;
-    width: 40px;
-    height: 40px;
+#contact-us-ul img{
+    width: 60px;
+    height: 60px;
+}
+
+.page-bg{
+    background-image: url("../images/main-page/Tile.png");
+    background-repeat: repeat;
+    /* justify-content: center;
+    align-items: center;
+    display:flex; */
+    background-size: 350px 350px;
 }
 
 .header{
@@ -95,24 +103,24 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("../images/garagev-bg.png");
-    background-repeat: repeat;
+    /* background-image: url("../images/main-page/Tile.png"); */
+    /* background-repeat: repeat; */
+    /* background-size: 350px 350px; */
+}
+
+.rest-of-page{
+    /* background-image: url("../images/main-page/Tile.png"); */
+    /* background-repeat: repeat; */
+    justify-content: center;
+    justify-content: center;
+    display:flex;
+    /* background-size: 350px 350px; */
 }
 
 .header h1{
     font-size: 20vw;
     margin:0;
     color: white;
-}
-
-.rest-of-page{
-    background-image: url("../images/garagev-bg.png");
-    background-repeat: repeat;
-    justify-content: center;
-    justify-content: center;
-    display:flex;
-    
-    
 }
 
 .foreground{
@@ -136,8 +144,9 @@ svg{
     height: 75px;
 }
 
-#page-title{
+.page-title{
     align-items: center;
+    height: 100px;
 }
 
 /* the spacing for all of the boxes */
@@ -167,4 +176,91 @@ svg{
   line-height: 30px;
   letter-spacing: 1px;
   /* border: 2px solid #333; */
+}
+
+
+/* body{
+    background: rgba(249, 219, 219, 0.988)
+} */
+
+.slider_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+}
+
+.container_slider{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 400px; */
+    width: 800px;
+    /* height: 100%; */
+    /* border: 6px solid #004649; */
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    flex: 0 0 100%;
+    /* height: 250px; */
+    /* height: 500px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-size: cover;
+    background-position: center; */
+}
+
+.slide{
+    transform: translateX(0);
+}
+
+.slide img{
+    width: 100%;
+    /* height: 100%; */
+    height: auto;
+    /* display: block; */
+    /* object-fit: cover; */
+}
+
+.slider_controls button{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: none;
+}
+
+.prev{
+    margin: 0 10px;
+    width: 30px;
+}
+.prev img{
+    /* margin: 0 10px */
+    width: 30px;
+}
+
+.next{
+    margin: 0 10px;
+    width: 30px;
+}
+
+.next img{
+    /* margin: 0 10px; */
+    width: 30px;
+}
+
+.page-p{
+    font-size: 18px;
+    font-family: Bahnschrift, sans-serif;
+    line-height: 30px;
+    letter-spacing: 1px;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
 }

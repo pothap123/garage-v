@@ -6,6 +6,7 @@
     </head>
     
     <body>
+        <div class = "page-bg">
         <section class="rest-of-page">
             <section class="foreground">
                 <div class="go-home">
@@ -14,32 +15,75 @@
                     </a>
                 </div>
 
-                <h1 id="page-title">Custom Builds</h1>
+                <!-- <h1 id="page-title">Custom Builds</h1> -->
+                 <img class="page-title" src="../images/custom-builds/custom-builds-title.png" alt="Previous">
 
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                <p class="page-p">When I first worked on building up a one off assetto corsa model of a friend's autocross built mx-5, I wasn't planning on making this a regular offering from the not yet named GARAGE-V. 
+                    Here we are several years later with international clients and close relationships, making vehicle models for driving simulators, and making them well! 
+                    <br/><br/>
+                    My master's thesis laid the groundwork for this side of the consultancy, where I made an assetto corsa model of the Leeds Gryphon Racing formula student car and validated it against engineering spec 
+                    multibody vehicle dynamics software.
+                    <br/><br/>
+                    What it would look like for you if you engage my services is you get a vehicle model to match your real life build and if you wished for it, a report authenticating its performance against ADAMS, 
+                    CarMaker or Simulink.
+                    <br/><br/>
+                    You get a vehicle model on assetto corsa that you get to use without paying for track hire, tires and fuel. Past clients have used this to set design targets for future modifications, 'try on'
+                     different modifications before committing to a purchase, or for practice ahead of upcoming events. 
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                </p>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                 <div class="slider_box">
+                    <div class="slider_controls">
+                        <button class="prev"><img src="../images/back-arrow.png" alt="Previous"></button>
+                    </div>
+                    
+                    <div class="container_slider">
+                        <div class="slider">
+                            <div class="slide active"><img src="../images/custom-builds/cool-view.jpeg" alt="Cool View"></div>
+                            <div class="slide"><img src="../images/custom-builds/top-view.jpeg" alt="Top View"></div>
+                            <div class="slide"><img src="../images/custom-builds/excel-sheet.jpeg" alt="Excel Sheet"></div>
+                            <div class="slide"><img src="../images/custom-builds/sim.jpeg" alt="Simulation"></div>
+                            <div class="slide"><img src="../images/custom-builds/metrics.jpeg" alt="Metrics"></div>
+                            <div class="slide"><img src="../images/custom-builds/ings350.png" alt="Ings 350"></div>
+                            <div class="slide"><img src="../images/custom-builds/garage-vary-nb.png" alt="Garage Vary NB"></div>
+                        </div>
+                    </div>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    <div class="slider_controls">
+                        <button class="next"><img src="../images/forward-arrow.png" alt="Next"></button>
+                    </div>
+                </div>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                <p class="page-p">I have really enjoyed this half of the consultancy and I've got big plans to grow it through building close working relationships with clients. So if you might be interested, please do contact me through Linkedin or E-mail!</p>
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                <!-- <script src="../js/custom_builds.js"> -->
+                <script>
+                    const slider = document.querySelector('.slider');
+                    const slides = document.querySelectorAll('.slide');
+                    const prevButton = document.querySelector('.prev');
+                    const nextButton = document.querySelector('.next');
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    let slideIndex = 0;
+                    slides[slideIndex].classList.add('active');
+                    prevButton.addEventListener('click', prevSlide);
+                    nextButton.addEventListener('click', nextSlide);
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
+                    function prevSlide() {
+                        slides[slideIndex].classList.remove('active');
+                        slideIndex = (slideIndex === 0) ? slides.length - 1 : slideIndex - 1;
+                        slides[slideIndex].classList.add('active');
+                        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+                    }
 
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
-
-Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-
-
-
-
+                    function nextSlide() {
+                        slides[slideIndex].classList.remove('active');
+                        slideIndex = (slideIndex === slides.length - 1) ? 0 : slideIndex + 1;
+                        slides[slideIndex].classList.add('active');
+                        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+                    }
+                </script>
             </section>
         </section>
+        </div>
     </body>
 </html>
