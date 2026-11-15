@@ -69,20 +69,19 @@ li a{
     border: 1px solid #e55e0a;
 }
 
-.gallery img{
-    width: 100%;
-    height: auto;
-}
-
 #contact-us-ul li{
     list-style: none;
     display: inline-block;
 }
 
 #contact-us-ul img{
-    width: 60px;
-    height: 60px;
+    /* width: 60px; */
+    width: clamp(40px, 5vw, 60px);
+    /* height: 60px; */
+    height: clamp(40px, 5vw, 60px);
 }
+
+
 
 .page-bg{
     background-image: url("../images/main-page/Tile.png");
@@ -117,8 +116,15 @@ li a{
     /* background-size: 350px 350px; */
 }
 
-.header h1{
+/* .header h1{
     font-size: 20vw;
+    margin:0;
+    color: white;
+} */
+
+.header img{
+    width: 80%;
+    height: auto;
     margin:0;
     color: white;
 }
@@ -141,12 +147,14 @@ li a{
 }
 
 #go-home-arrow-img{
-    height: 75px;
+    /* height: 75px; */
+    height: clamp(40px, 5.5vw, 350px);
 }
 
 .page-title{
     align-items: center;
-    height: 100px;
+    /* height: 100px; */
+    height: clamp(40px, 6.7vw, 300px);
 }
 
 /* the spacing for all of the boxes */
@@ -193,11 +201,7 @@ li a{
 .container_slider{
     display: flex;
     align-items: center;
-    /* justify-content: center; */
-    /* width: 400px; */
     width: 800px;
-    /* height: 100%; */
-    /* border: 6px solid #004649; */
     overflow: hidden;
 }
 
@@ -230,29 +234,39 @@ li a{
 }
 
 .slider_controls button{
-    height: 30px;
+    /* height: 30px; */
+    height: clamp(10px, 3vw, 30px);
     width: 30px;
     border-radius: 50%;
     border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .prev{
     margin: 0 10px;
-    width: 30px;
-}
-.prev img{
-    /* margin: 0 10px */
-    width: 30px;
+    /* margin-right: 10px; */
+    /* margin-left: 5px; */
+    /* width: 30px; */
+    width: clamp(10px, 3vw, 30px);
 }
 
 .next{
     margin: 0 10px;
-    width: 30px;
+    /* margin-left: 10px; */
+    /* margin-right: 5px; */
+    /* width: 30px; */
+    width: clamp(10px, 3vw, 30px);
 }
 
+.prev img,
 .next img{
     /* margin: 0 10px; */
-    width: 30px;
+    /* width: 30px; */
+    width: clamp(10px, 3vw, 30px);
+    /* border: 1px solid blue; */
 }
 
 .page-p{
